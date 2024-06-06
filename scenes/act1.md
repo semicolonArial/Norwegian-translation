@@ -6,9 +6,9 @@ SceneSetup.act1();
 
 (...300)
 
-n: AND THIS IS THE HUMAN'S ANXIETY
+n: OG DETTE ER MENNESKETS ANGST
 
-n: _YOU_ ARE THE ANXIETY
+n: _DU_ ER ANGSTEN
 
 {{if window.localStorage.continueChapter=="replay"}}
 (#act1_replay)
@@ -24,17 +24,17 @@ n: _YOU_ ARE THE ANXIETY
 
 `hong({mouth:"0_neutral", eyes:"0_neutral"})`
 
-h: Oh hey! We're back here again?
+h: Å hei! Vi er her igjen?
 
 `hong({eyes:"0_neutral"})`
 
-n: YOUR JOB IS TO PROTECT YOUR HUMAN FROM *DANGER*
+n: JOBBEN DIN ER Å BESKYTTE MENNESKET DITT FRA *FARE*
 
 `bb({eyes:"look", mouth:"small_lock"})`
 
-n: IN FACT, REPLAYING THIS GAME IS PUTTING THEM IN *DANGER* RIGHT NOW
+n: FAKRISK, Å GJENSPILLE DETTE SPILLE SETTER DEM I *FARE* AKKURAT NÅ
 
-n: QUICK, WARN THEM!
+n: NÅ, ADVAR DEM!
 
 ```
 sfx("squeak");
@@ -43,12 +43,13 @@ hong({body:"0_squeeze"});
 ```
 
 b: Human! Listen, we're in danger! The player...
+  Mennske! Hør her, vi er i fare! Spilleren...
 
-[...is gonna torture us again!](#act1_replay_torture)
+[...skal torturere oss igjen!](#act1_replay_torture)
 
-[...won't find an alternate ending!](#act1_replay_alternate)
+[...kommer ikke til å finne en alternativ slutt!](#act1_replay_alternate)
 
-[...will get ludonarrative dissonance!](#act1_replay_dissonance)
+[...vil få ludonarrativ dissonans!](#act1_replay_dissonance)
 
 # act1_replay_torture
 
@@ -59,32 +60,32 @@ hong({body:"0_sammich"});
 ```
 
 {{if window.HACK_REPLAY.act1_ending=="fight"}}
-b: They'll make us curl up into a ball and cry!
+b: Hen kommer til å få oss til å krølle oss sammen til en ball og grine!
 {{/if}}
 
 {{if window.HACK_REPLAY.act1_ending=="flight"}}
-b: They'll make us kill your phone for giving you a panic attack!
+b: They'll make us kill your phone for giving you a panic attack! Hen kommer til å få oss til å drepe mobilen din fordi den ga deg et panikkanfall!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="fight"}}
-b: They'll make us *NOT* punch the party host!
+b: They'll make us *NOT* punch the party host! Hen kommer til å få oss til å *IKKE* slå festverten!
 {{/if}}
 
 {{if window.HACK_REPLAY.a2_ending=="flight"}}
-b: They'll make us punch the Sympathetic Anti-Villain party host!
+b: Hen kommer til å få oss til å slå den Medfølende Antiskurke-festverten!
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="jump"}}
-h: Well at least we might not jump off the roof this ti--
+h: Vel kanskje vi i hvert fall slipper å hoppe av taket denne gang--
 {{/if}}
 
 {{if window.HACK_REPLAY.a3_ending=="walkaway"}}
-b: THEY'LL MAKE US JUMP OFF THE ROOF.
+b: HEN KOMMER TIL Å FÅ OSS TIL Å HOPPE AV TAKET.
 {{/if}}
 
 `bb({body:"fear"});`
 
-b: ALL THESE NEW TERRIBLE THINGS WILL HAPPEN TO US, AND THEN WE'LL--
+b: ALLE DISSE NYE FORFERDELIGE TINGENE KOMMER TIL Å SKJE MED OSS, OG SÅ KOMMER VI TIL Å-
 
 (#act1_replay_end)
 
